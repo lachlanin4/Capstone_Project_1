@@ -31,7 +31,7 @@ and high scores.
 8. Strengthen problem-solving and logical thinking skills through designing
 and implementing a functional game.
 
-###Key Features needs to implement:
+### Key Features needs to implement:
 
 1. Questions and Answers: Prepare a collection of questions and their
 corresponding answers. Each question should have multiple choices,
@@ -59,7 +59,7 @@ difficulty level, providing a more dynamic scoring system.
 competitive element in the game. Allow players to compare their
 scores with previous players or themselves.
 
-###Implementation Help/Steps:
+### Implementation Help/Steps:
 
 Step 1: Set up the project
   Create a new Python file called "quiz_game.py" and open it in your preferred code editor.
