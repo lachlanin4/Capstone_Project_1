@@ -1,3 +1,5 @@
 # Contributors
 
 - Lachlan
+- Martyna
+- Sophia
