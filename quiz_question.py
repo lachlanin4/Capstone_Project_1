@@ -8,7 +8,7 @@ of a question.
 class Question:
     """
     This class encapsulates a quiz question, it defines the difficulty
-    of the question, the question,tself  what the correct answer is and what
+    of the question, the question itself, what the correct answer is and what
     possible plausible wrong answers are. The class could also define
     how the question could be asked and deal with other things limiting
     the question answering to a given period for example.
