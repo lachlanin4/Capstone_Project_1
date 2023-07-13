@@ -1,4 +1,4 @@
-    """
+"""
         This is a quiz game which asks 10 general knowledge questions and 
         created in the scope of the Capstone Project by following the below instructions
 
@@ -27,7 +27,7 @@
         Step 7: Challenge: Add a timer.
         For an additional challenge, students can implement a timer for each
         question, allowing users a limited amount of time to answer.
-    """
+"""
 
 
 class Contest:
