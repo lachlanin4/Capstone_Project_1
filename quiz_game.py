@@ -127,6 +127,7 @@ class Contest:
                 print(f"Your total is now {total_points}")
             else:
                 print("Incorrect!")
+                print(f"The correct answer was option: {str(question['options'].index(question['correct_answer']) + 1)}")
         print("Contest completed!")
         print(f"Your total is: {total_points} points")
     
