@@ -1,8 +1,6 @@
 """
         This is a quiz game which asks 10 general knowledge questions and 
         created in the scope of the Capstone Project by following the below instructions
-
-
         Implementation Help/Steps:
         Step 1: Set up the project
         Create a new Python file called "quiz_game.py" and open it in your
@@ -33,6 +31,8 @@
 class Contest:
     def __init__(self):
         self.status = False
+        self.highest_score = 0
+        self.total_score = 0
         self.questions = [
             {
                 "question": "What is the capital of France",
@@ -278,8 +278,11 @@ class Contest:
         else:
             input("Your request is not recognized.")
 
+
+
     def ask_questions(self, questions):
         total_points = 0
+        name=input("What is your name?\n")
         for question in questions:
             print(question["question"])
             print(f"This question is worth {question['value']} points")
@@ -303,6 +306,25 @@ class Contest:
                     f"The correct answer was option: {str(question['options'].index(question['correct_answer']) + 1)}"
                 )
                 print(f"Your total is currently {total_points} points")
+
+        print(f"You got: {total_points} points")
+        print("Contest completed!")
+
+
+
+        file = open('highscores.txt','a')
+        file.write(name + " " + str(total_points) + "\n")
+        file.close()
+
+        file = open('highscores.txt').readlines()
+        scores_tuples = []
+        for line in file:
+            name, score = line.split()[0], float(line.split()[1])
+            scores_tuples.append((name, score))
+        scores_tuples.sort(key=lambda t: t[1], reverse=True)
+        print("HIGHSCORES\n")
+        for i, (name, score) in enumerate(scores_tuples[:10]):
+            print("{}. Score:{} - Player:{}".format(i+1, score, name))
         print("Quiz completed!")
         print(f"Your total is: {total_points} points\nCongratulations!")
 
