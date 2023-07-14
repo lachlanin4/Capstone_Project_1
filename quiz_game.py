@@ -146,7 +146,7 @@ class Contest:
 
             user_response = input("Type the number of your choice: ")
 
-            while user_response != '1' and user_response!='2' and user_response!='3' and user_response!= '4':
+            while user_response not in ['1','2','3','4']:
                 print("That is not a valid answer")
                 user_response = input("Type the number of your choice: ")
             if user_response == str(question['options'].index(question['correct_answer']) + 1):
