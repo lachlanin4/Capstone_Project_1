@@ -1,8 +1,6 @@
 """
         This is a quiz game which asks 10 general knowledge questions and 
         created in the scope of the Capstone Project by following the below instructions
-
-
         Implementation Help/Steps:
         Step 1: Set up the project
         Create a new Python file called "quiz_game.py" and open it in your
@@ -27,12 +25,16 @@
         Step 7: Challenge: Add a timer.
         For an additional challenge, students can implement a timer for each
         question, allowing users a limited amount of time to answer.
-"""
+"""""
+
+
 
 
 class Contest:
     def __init__(self):
         self.status = False
+        self.highest_score = 0 
+        self.total_score = 0
         self.questions = [
             {
                 'question': "What is the chemical symbol for gold?",
@@ -113,8 +115,11 @@ class Contest:
         else:
             input('Your request is not recognized.')
 
+
+
     def ask_questions(self, questions):
         total_points = 0
+        name=input("What is your name?\n")
         for question in questions:
             print(question['question'])
             for i, option in enumerate(question['options']):
@@ -129,7 +134,27 @@ class Contest:
                 print("Incorrect!")
         print("Contest completed!")
         print(f"You got: {total_points} points")
-    
+        print("Contest completed!")
+        print(f"You total is now: {total_points} points")
+
+
+
+        file = open('highscores.txt','a')
+        file.write(name + " " + str(total_points) + "\n")
+        file.close()
+
+        file = open('highscores.txt').readlines()
+        scores_tuples = []
+        for line in file:
+            name, score = line.split()[0], float(line.split()[1])
+            scores_tuples.append((name, score))
+        scores_tuples.sort(key=lambda t: t[1], reverse=True)
+        print("HIGHSCORES\n")
+        for i, (name, score) in enumerate(scores_tuples[:10]):
+            print("{}. Score:{} - Player:{}".format(i+1, score, name))
+
+
+
     def run(self):    
         while self.status:
             self.ask_questions(self.questions)
