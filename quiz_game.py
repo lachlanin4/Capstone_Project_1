@@ -35,16 +35,40 @@ class Contest:
         self.status = False
         self.questions = [
             {
+                'question': "What is the capital of France",
+                'options': ["Nice", "Marseille", "Paris", "Lille"],
+                'correct_answer': "Paris",
+                'value': 1  # Easy question
+            },
+            {
+                'question': "What is the biggest continent in the world?",
+                'options': ["Antarctica", "Asia", "North America", "Africa"],
+                'correct_answer': "Asia",
+                'value': 2  # Easy question
+            },
+            {
                 'question': "What is the chemical symbol for gold?",
                 'options': ["Au", "Ag", "Fe", "Cu"],
                 'correct_answer': "Au",
                 'value': 3  # Easy question
             },
             {
+                'question': "Which acid is in vinegar?",
+                'options': ["Acetic", "Sulfuric", "Citric", "Oxalic"],
+                'correct_answer': "Acetic",
+                'value': 4  # Easy question
+            },
+            {
                 'question': "Which planet is closest to the Sun?",
                 'options': ["Mars", "Venus", "Jupiter", "Mercury"],
                 'correct_answer': "Mercury",
                 'value': 5  # Easy question
+            },
+            {
+                'question': "Which is not an element in the periodic table?",
+                'options': ["Americium", "Volcium", "Lawrencium", "Francium"],
+                'correct_answer': "Volcium",
+                'value': 6  # Easy question
             },
             {
                 'question': "Which musical instrument is known as the 'king of instruments'?",
