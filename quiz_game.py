@@ -29,7 +29,6 @@
         question, allowing users a limited amount of time to answer.
 """
 
-
 class Contest:
     def __init__(self):
         self.status = False
@@ -256,18 +255,25 @@ class Contest:
         total_points = 0
         for question in questions:
             print(question['question'])
+            print(f"This question is worth {question['value']} points")
             for i, option in enumerate(question['options']):
                 print(f"{i+1}) {option}")
 
             user_response = input("Type the number of your choice: ")
+
+            while user_response not in ['1','2','3','4']:
+                print("That is not a valid answer")
+                user_response = input("Type the number of your choice: ")
             if user_response == str(question['options'].index(question['correct_answer']) + 1):
                 total_points += question['value']
                 print("Correct!")
                 print(f"Your total is now {total_points}")
             else:
                 print("Incorrect!")
-        print("Contest completed!")
-        print(f"You got: {total_points} points")
+                print(f"The correct answer was option: {str(question['options'].index(question['correct_answer']) + 1)}")
+                print(f"Your total is currently {total_points} points")
+        print("Quiz completed!")
+        print(f"Your total is: {total_points} points\nCongratulations!")
     
     def run(self):    
         while self.status:
