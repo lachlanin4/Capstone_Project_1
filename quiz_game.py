@@ -25,7 +25,7 @@
         Step 7: Challenge: Add a timer.
         For an additional challenge, students can implement a timer for each
         question, allowing users a limited amount of time to answer.
-"""""
+"""
 
 
 
