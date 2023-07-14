@@ -132,10 +132,8 @@ class Contest:
                 print(f"Your total is now {total_points}")
             else:
                 print("Incorrect!")
-        print("Contest completed!")
         print(f"You got: {total_points} points")
         print("Contest completed!")
-        print(f"You total is now: {total_points} points")
 
 
 
