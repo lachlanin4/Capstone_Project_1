@@ -117,6 +117,121 @@ class Contest:
                 'options': ["Blue whale", "Elephant", "Giraffe", "Lion"],
                 'correct_answer': "Blue whale",
                 'value': 10  # Difficult question
+            },
+            {
+                'value': 1,
+                'question': "What is the capital of the UK?",
+                'correct_answer': "London",
+                'options': ["Berlin", "Paris", "London", "Neptune"]
+            },
+            {
+                'value': 2,
+                'question': "What is a Kilt",
+                'correct_answer': "A garment resembling a wrap-around knee-length skirt",
+                'options': [
+                "A type of dagger",
+                "A Japanese term for a plummer",
+                "A type of dog",
+                "A garment resembling a wrap-around knee-length skirt"
+                ],
+            },
+            {
+                'value': 3,
+                'question': "How many sides does an octagon have?",
+                'correct_answer': "8",
+                'options': ["6", "8", "9", "10"],
+            },
+            {
+                'value': 4,
+                'question': "What is a trowel?",
+                'correct_answer': "A tool used in gardening",
+                'options': [
+                "An old spelling of troll",
+                "A mixture used in plastering",
+                "A type of robe",
+                "A tool used in gardening"
+                ],
+            },
+            {
+                'value': 5,
+                'question': "In darts what is a slang term for hitting a double 3?",
+                'correct_answer': "Basement",
+                'options': ["Six O'Clock Rock", "Basement", "Bed end", "A Clock Fall"],
+            },
+            {
+                'value': 6,
+                'question': "What is pyrography?",
+                'correct_answer': "A way of decorating materials through burn marks",
+                'options': [
+                "An early way of studying the sun",
+                "An ancient form glass blowing",
+                "An Incan dance",
+                "A way of decorating materials through burn marks"
+                ],
+            },
+            {
+                'value': 7,
+                'question': "What is a peanut classified as?",
+                'correct_answer': "A legume",
+                'options': ["A legume", "A nut", "A herb", "A fruit"],
+            },
+            {
+                'value': 8,
+                'question': "In computer science what is a nibble?",
+                'correct_answer': "4 bits",
+                'options': [
+                "An early slang term for a cable failure",
+                "A form of low level programming language",
+                "4 bits",
+                "An unsolvable problem"
+                ],
+            },
+            {
+                'value': 9,
+                'question': "How many official languages does Switzerland have?",
+                'correct_answer': "4",
+                'options': ["3", "4", "5", "7"],
+            },
+            {
+                'value': 10,
+                'question': "What was the nationality of the ancient Greek figure 'Polydamna'",
+                'correct_answer': "Egyptian",
+                'options': ["Egyptian", "Greek", "Dorian", "Persian"],
+            },
+            {
+                'value': 11,
+                'question': "How many handles does a tyg drinking vessel usually have",
+                'correct_answer': "3",
+                'options': ["1", "2", "3", "0"],
+            },
+            {
+                'value': 12,
+                'question': "Who was the mother of King Edward II of England",
+                'correct_answer': "Isabella of France",
+                'options': [
+                "Eleanor Countess of Ponthieu",
+                "Jean d'Armagnac",
+                "Violant of Bar",
+                "Isabella of France"
+                ],
+            },
+            {
+                'value': 13,
+                'question': "Where was the RSPB first established",
+                'correct_answer': "Manchester",
+                'options': ["London", "Manchester", "Oxford", "Norwich"],
+            },
+            {
+                'value': 14,
+                'question': "How many Apollo space missions did NOT make it to the moon?",
+                'correct_answer': "11",
+                'options': ["9", "10", "11", "12"],
+            },
+            {
+                'value': 15,
+                'question': "In which Abbey is 11th Century Nobleman Eadulf Rus burried?",
+                'correct_answer': "Jedburgh",
+                'options': ["Jedburgh", "Melrose", "Holyrood", "Hexham"],
             }
         ]
 
