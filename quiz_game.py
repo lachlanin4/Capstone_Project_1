@@ -33,7 +33,7 @@
 class Contest:
     def __init__(self):
         self.status = False
-        self.highest_score = 0 
+        self.highest_score = 0
         self.total_score = 0
         self.questions = [
             {
